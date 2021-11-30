@@ -1,0 +1,12 @@
+---
+layout: page
+title: Cleaning the Python Terminal
+date: '2014-10-23T23:34:00.001-07:00'
+author: light94
+tags: [ubuntu,python]
+modified_time: '2014-10-23T23:34:33.777-07:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-8821455855395231543
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/10/cleaning-python-terminal.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">This article is about the different methods that can be used to clear the python terminal<br /><br />The <b>first method </b>is like this,<br /><br /><b>Ubuntu :</b><br /><b>&nbsp;</b>import os<br />&nbsp;os.system('clear') &nbsp; &nbsp;<br /><br /><br /><b>Windows:</b><br />import os<br />os.system('cls')<br /><br /><br /><br /><br /><b>Second Method:</b><br /><br />print chr(27) + "[2J" //python2<br /><br />print(chr(27) + "[2J") &nbsp;//python3<br /><br />Note that this method is only for <b>ANSI Terminals.</b><br /><b><br /></b><i>27 is the decimal representation of the escape key. So ESC[2J is recognized as ANSI clear command.</i><br /><b><br /></b><b>Third Method</b><br /><br />just keep printing new lines like<br /><br />print '\n' * 80</div>

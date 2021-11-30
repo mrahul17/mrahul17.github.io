@@ -1,0 +1,12 @@
+---
+layout: page
+title: Handling change in usernames, in a better way!
+date: '2014-11-22T04:55:00.000-08:00'
+author: light94
+tags: [random-thoughts]
+modified_time: '2014-12-01T20:56:41.002-08:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-7721661348436069020
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/11/handling-change-in-usernames-in-better.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Some websites that have account for users , give an option to change their username. It appears to be a trivial task. I have implemented this functionality in 2 of my projects . The functionality i used was to ask a <b>LOGGED IN </b>user for the <b>new username </b>and <b>would ask him to reenter the password. </b>This is a very simple approach and works well for small applications that do not have very much functionality in terms of databases.<br /><div>&nbsp; &nbsp; &nbsp;</div><div>&nbsp; &nbsp; &nbsp;I recently changed my username on Github and was wondering what procedure they followed. I think it is <b>highly improbable </b>that they use the <b>usernames that we see</b>&nbsp;internally in databases too. What I mean is that suppose <b>Mr.&nbsp;XYZ does a commit in his repo in Gihub (XYZ is the username), so in their database that stores the history of commits, XYZ is not stored, rather a hash( for more security) or a simple unique number is stored.</b>&nbsp;Their would be a user table where each such number or hash <b>uniquely determines a user and does not change anytime, no matter how many times the user changes his username. </b>Whenever some information is displayed that should identify "<b>who ? "</b>, they would simply fetch the username associated with the unique number or hash (of course they could store this number in a session variable to avoid querying the same thing). <b>This gives the advantage is that you don't have to traverse through your entire database and substitute the old username with the new one. You simply change the username in the user table and the unique identifier(the hash or the number) remains the same.</b> It would greatly bring down computations required for trivial task like this.<b>&nbsp;</b></div></div>

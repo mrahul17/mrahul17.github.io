@@ -1,0 +1,12 @@
+---
+layout: page
+title: Browser and the Event Loop
+date: '2014-11-09T08:54:00.001-08:00'
+author: light94
+tags: [browser,javascript]
+modified_time: '2014-11-09T10:06:56.772-08:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-5478480760693342357
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/11/browser-and-event-loop.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">This is an extension of my last post and I wrote it after watching <a href="https://twitter.com/philip_roberts" target="_blank">Philip Robert's</a> speech.<br /><div><br /></div><div>A browser is constrained by what you are doing with the Javascript. The browser would like to repaint /render the screen 60 frames per millisec, but it can't render if there is code in the call stack. The <b>render is like a callback with the difference that it gets a priority among callbacks. That is, if the stack is empty and there the render is in queue, it will be executed despite the fact that any other callback is before it.</b></div><div><b><br /></b></div><div>While render is blocked, you cannot select text on screen, click on a button and see the response etc. That is why we should not put slow code on the stack . We should not block the event loop.</div></div>

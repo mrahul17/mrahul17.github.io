@@ -1,0 +1,12 @@
+---
+layout: page
+title: Getting scrapy to work on ubuntu
+date: '2014-10-22T15:51:00.001-07:00'
+author: light94
+tags: [ubuntu,python,scrapy]
+modified_time: '2014-10-22T15:51:09.495-07:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-7476108329745784364
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/10/getting-scrapy-to-work-on-ubuntu.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">This post is for those who are trying to install scrapy on their ubuntu machines.<br /><br />In order to install scrapy, the following components have to be installed<br />1)python 2.7<br />2)pip and setuptools<br />3)lxml<br />4)OpenSSl<br /><br />When you install ubuntu, it also installs python 2.7.X,lxml and OpenSSL along with it (i've tested it atleast on ubuntu 12.04 to 14.04). In certain cases pip is not preinstalled , so you can install it like this:<br /><div style="text-align: center;"><b>sudo apt-get install python-pip</b></div><br />One thing that the docs do not talk about is installing the python development package. Trying to install scrapy leads to errors. You <b>must</b>&nbsp;install it prior to installing scrapy by:<br /><div style="text-align: center;"><b>sudo apt-get install python-dev</b></div><br /><br />After this you just need to do a<br /><div style="text-align: center;"><b>&nbsp;sudo pip install scrapy</b></div><div style="text-align: center;"><b><br /></b></div><div style="text-align: left;">One important point that I would like to mention is that people who connect to Internet by a proxy can still face some problem installing python packages.This problem has an answer <a href="http://stackoverflow.com/questions/15501133/python-pip-error-cannot-fetch-index-base-url-https-pypi-python-org-simple" target="_blank">here</a>&nbsp;.</div><div style="text-align: left;"><i><b>TL;DR </b>append the E flag to sudo like <b>sudo -E install scrapy.</b>&nbsp;This makes use of the proxy settings to connect to the package library.</i></div></div>

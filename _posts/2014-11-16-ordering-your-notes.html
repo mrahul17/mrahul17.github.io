@@ -1,0 +1,12 @@
+---
+layout: page
+title: Ordering your Notes
+date: '2014-11-15T11:20:00.001-08:00'
+author: light94
+tags: [my-scripts,hacks]
+modified_time: '2014-11-17T08:35:23.755-08:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-9111482333882081223
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/11/ordering-your-notes.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">You are a student and did not make notes properly for a particular subject? And you took photos of your friend's notes to study?<b>&nbsp;Then this post is for you.</b><br /><b><br /></b>I too had such a situation once. One thing to highlight is the naming convention by most devices. <b>Most phones and cameras name the shooted images as yyyymmdd_hhmmss .</b><br /><b><br /></b>Obviously, <b>this naming convention makes sure that no two photos have the same name .</b>(I have not tested what happens when you deliberately change your device time to an earlier time which corresponds to an already present image on device, though it is very difficult to remain <b>accurate to the second.)</b><br /><b><br /></b><b><i>Python to the rescue.</i></b><br /><b><i><br /></i></b>My method is not efficient but it is quick and <b>"quick" </b>is what i wanted. So, &nbsp;i sorted out the names of the images on the basis of when they were clicked (to be more accurate, time when they were clicked) and then renamed them with integers starting&nbsp;<b>from 1</b>&nbsp;.<br /><br />This way you can easily remember what page you were on when you last left.<br /><br />My code is available at&nbsp;<a href="https://github.com/light94/rename-notes" target="_blank">https://github.com/light94/rename-notes</a><br /><br /><br /><b>UPDATE:</b><br />I have updated my code to rotate the images by 90 degree so that everytime a new image comes, we don't have to manually rotate it.<br /><br />Note: One important thing that I learnt from this was that <b><i>python's os.listdir()</i></b> generates the list randomly if no parameters are passed to it.&nbsp;</div>

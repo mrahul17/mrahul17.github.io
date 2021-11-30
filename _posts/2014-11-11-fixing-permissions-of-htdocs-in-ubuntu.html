@@ -1,0 +1,12 @@
+---
+layout: page
+title: Fixing Permissions of htdocs in Ubuntu
+date: '2014-11-11T07:53:00.002-08:00'
+author: light94
+tags: [apache,ubuntu,linux]
+modified_time: '2014-12-11T07:43:11.092-08:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-5486783809893950364
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/11/fixing-permissions-of-htdocs-in-ubuntu.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">If you are using xampp, you might already know that the default location of your projects will be /opt/lampp/htdocs . However you cannot edit contents of this folder without <b>root permissions. </b>However, using the root account for trivial things like editing files is a <b>very bad idea </b>since you can do harmful changes to your system unknowingly.<br /><div><br /></div><div>There is a very detailed and beautiful description of how to avoid this in&nbsp;<a href="http://computernetworkingnotes.com/ubuntu-12-04-tips-and-tricks/how-to-fix-permission-of-htdocs-in-ubuntu.html" target="_blank">this</a>&nbsp;blogpost.<br /><br />The <b>idea</b> is, we need to change the ownership of the folder to something other than the root. <i><b>No more sudo for triviality.!! </b>Go ahead and read that article.</i><br /><i><br /></i><i style="font-weight: bold;">UPDATE: </i>The <b>-R</b>&nbsp;flag to <b>chown </b>applies command to all the subdirectories( recursively) as well.</div></div>

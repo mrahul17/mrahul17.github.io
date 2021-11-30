@@ -1,0 +1,12 @@
+---
+layout: page
+title: ! ' A SCRIPT that makes your Downloads directory neat!!'
+date: '2014-12-12T23:10:00.001-08:00'
+author: light94
+tags: [my-scripts,hacks,linux]
+modified_time: '2014-12-14T06:25:52.863-08:00'
+blogger_id: tag:blogger.com,1999:blog-4425839703382213369.post-2311803196542881066
+blogger_orig_url: http://justanotherlearner.blogspot.com/2014/12/code-to-make-your-downloads-directory.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">I made a utility &nbsp;for myself that will help me find downloaded files more easily than before. It is a shell scripts that <b>analyzes the filename</b> of the downloaded file and places it in a directory named by its extension. This means a <b>pdf </b>file will go to a <b>directory named pdf</b>&nbsp;<b>as soon as it is downloaded. </b>This works for all file extensions. I intend to make it better . It is going to help&nbsp;those whose Downloads directory is always cluttered (like mine :P ). You can get it at&nbsp;<a href="https://github.com/light94/myShellScripts/blob/master/sortDownloadedFiles" target="_blank">https://github.com/light94/myShellScripts/blob/master/sortDownloadedFiles</a><br /><br />Place the script in <b>/bin </b>directory and&nbsp;Just run this script like<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>&nbsp;nohup sortDownloadedFiles &amp;</b><br /><b><br /></b>and close the terminal. The script will keep running in the background and will keep looking on your Downloads directory.<br /><br />And if you want to know how to stop the script. Check it&nbsp;<a href="http://unix.stackexchange.com/questions/174028/killing-a-shell-script-running-in-background" target="_blank">here</a>&nbsp;.<br />What you need to do in short is :<br /><br /><div style="text-align: center;"><b>ps -aux | grep sortDownloadedFiles</b></div><div style="text-align: center;"><b><br /></b></div><div style="text-align: center;"><b>killall sortDownloadedFiles inotifywait</b></div><div style="text-align: center;"><b><br /></b></div><div style="text-align: center;"><b><br /></b></div><div style="text-align: center;"><br /></div></div>
